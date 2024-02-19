@@ -43,7 +43,7 @@ const heroSection = document.getElementById('home');
 const heroSectionHeight = heroSection.clientHeight;
 
 canvas.width = window.innerWidth;
-canvas.height = heroSectionHeight; // Set the canvas height to the height of the hero section
+canvas.height = heroSectionHeight;
 
 
 const coinImage = new Image();
@@ -90,3 +90,62 @@ createCoins();
 update();
 
 coinCanvasContainer.appendChild(canvas);
+
+
+//Dogememe words
+const dogeText = document.createElement('p');
+dogeText.id = 'dogeText';
+document.getElementById('dogeMeme').appendChild(dogeText);
+
+function animateDogeText() {
+    const phrases = [
+        'Much Gain.',
+        'Much wow.',
+        'So Doge.',
+        'Many coins.',
+        'Very crypto.',
+        'Wow.',
+        'Very reward.',
+        'Such mining',
+        "Many NFTs, much mining power!",
+        "So NFT, very miner!",
+        "Such ownership, much hash power!",
+        "Many NFTs, wow mining!",
+        "So Doge, very NFT!",
+        "Much NFT, many coins!",
+        "So ownership, much mining!",
+        "Many NFTs, much wow!",
+        "Such NFT, very miner!",
+        "So Doge, much hash power!"
+    ];
+
+    const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+
+    const randomX = Math.random() * 100;
+    const randomY = Math.random() * 100;
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    const randomSize = Math.floor(Math.random() * 20) + 16;
+
+    dogeText.textContent = randomPhrase;
+    dogeText.style.opacity = 1;
+    dogeText.style.left = randomX + '%';
+    dogeText.style.top = randomY + '%';
+    dogeText.style.color = randomColor;
+    dogeText.style.fontSize = randomSize + 'px';
+
+    setTimeout(() => {
+        dogeText.style.opacity = 0;
+    }, 1500);
+}
+
+setInterval(animateDogeText, 3000);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const coin = document.querySelector('.coin');
+
+    // Set a random delay and height for each coin
+    const delay = Math.random() * 5;
+
+    // Apply the delay, starting position, and rotation to the coin
+    coin.style.animationDelay = `${delay}s`;
+});

@@ -4,7 +4,7 @@ body {
 p {
   margin: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 25px;
   line-height: 24px;
 }
 
@@ -12,6 +12,24 @@ p {
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: 'Marker';
+  src: url('../fonts/PermanentMarker-Regular.ttf') format('truetype');
+}
+
+h1 {
+  font-family: 'Marker', sans-serif;
+}
+
+h2 {
+  font-family: 'Marker', sans-serif;
+}
+
+h3 {
+  font-family: 'Marker', sans-serif;
+}
+
 
 #coinCanvasContainer {
   position: absolute;
@@ -209,7 +227,7 @@ p {
   height: 180px;
   border-radius: 100%;
   background-image: url(../images/Dogecoin_Logo.png);
-  background-size: contain; /* or 'cover' */
+  background-size: contain; 
   background-repeat: no-repeat;
   background-position: center;
   -webkit-animation: preloader-fx 1.6s linear infinite;
@@ -539,7 +557,6 @@ p {
 }
 
 .hero-image {
-  width: 80%;
   overflow: hidden;
   border-radius: 50%; 
 }
@@ -862,4 +879,40 @@ p {
 .areawbutton .awb-content .button .btn:hover {
   color: #fff;
   background-color: #081828;
+}
+
+
+#dogeMeme {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#dogeText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-family: 'Comic Sans MS', cursive;
+  color: #ffcc00;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.coin {
+  position: absolute;
+  top: 20%;
+  left: -150px; /* Start off-screen */
+  animation: coinMove 5s linear infinite;
+  opacity: .2;
+}
+
+@keyframes coinMove {
+  0% {
+    transform: translateX(-50px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(calc(100vw + 50px)) rotate(360deg);
+  }
 }
