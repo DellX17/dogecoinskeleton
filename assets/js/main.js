@@ -132,6 +132,7 @@ function animateDogeText() {
     dogeText.style.top = randomY + '%';
     dogeText.style.color = randomColor;
     dogeText.style.fontSize = randomSize + 'px';
+    dogeText.style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)';
 
     setTimeout(() => {
         dogeText.style.opacity = 0;

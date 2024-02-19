@@ -24,10 +24,13 @@ h1 {
 
 h2 {
   font-family: 'Marker', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h3 {
   font-family: 'Marker', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
 
@@ -808,7 +811,9 @@ h3 {
     Areaw button
 ========================================*/
 .areawbutton {
-  background-color: black;
+  background-image: url(../images/Le-doge.png);
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
 
 .areawbutton .awb-content {
