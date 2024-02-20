@@ -124,7 +124,7 @@ function animateDogeText() {
     const randomX = Math.random() * 100;
     const randomY = Math.random() * 100;
     const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-    const randomSize = Math.floor(Math.random() * 20) + 16;
+    const randomSize = Math.floor(Math.random() * 20) + 26;
 
     dogeText.textContent = randomPhrase;
     dogeText.style.opacity = 1;
@@ -134,12 +134,9 @@ function animateDogeText() {
     dogeText.style.fontSize = randomSize + 'px';
     dogeText.style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)';
 
-    setTimeout(() => {
-        dogeText.style.opacity = 0;
-    }, 1500);
 }
+setInterval(animateDogeText, 2000);
 
-setInterval(animateDogeText, 3000);
 
 document.addEventListener('DOMContentLoaded', function () {
     const coin = document.querySelector('.coin');
@@ -155,12 +152,12 @@ document.addEventListener('DOMContentLoaded', function () {
 //Dogefeature dogememe
 const spans = document.querySelectorAll('.dogefeatures span');
 
-        function changeStyle() {
-            const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink'];
+function changeStyle() {
+    const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink'];
 
-            spans.forEach(span => {
-                span.style.color = colors[Math.floor(Math.random() * colors.length)];
-            });
-        }
+    spans.forEach(span => {
+        span.style.color = colors[Math.floor(Math.random() * colors.length)];
+    });
+}
 
-        setInterval(changeStyle, 3000);
+setInterval(changeStyle, 3000);
