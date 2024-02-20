@@ -815,7 +815,10 @@ p{
 ========================================*/
 .black-section {
   background-color: gray;
+  background-image: url(../images/dogedance.gif);
+  background-repeat: no-repeat;
   color: white;
+  background-position: right;
 }
 
 .black-section .section-title {
