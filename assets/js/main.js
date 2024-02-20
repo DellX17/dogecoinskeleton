@@ -150,3 +150,17 @@ document.addEventListener('DOMContentLoaded', function () {
     // Apply the delay, starting position, and rotation to the coin
     coin.style.animationDelay = `${delay}s`;
 });
+
+
+//Dogefeature dogememe
+const spans = document.querySelectorAll('.dogefeatures span');
+
+        function changeStyle() {
+            const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink'];
+
+            spans.forEach(span => {
+                span.style.color = colors[Math.floor(Math.random() * colors.length)];
+            });
+        }
+
+        setInterval(changeStyle, 3000);

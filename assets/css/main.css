@@ -29,7 +29,7 @@ p {
 }
 
 h1 {
-  font-family: 'Marker', sans-serif;
+  font-family: 'Bangers', sans-serif;
 }
 
 h2 {
@@ -620,8 +620,8 @@ p{
   text-align: left;
 }
 
-.hero-area .hero-content h1 {
-  font-size: 50px;
+.hero-area .hero-content h2 {
+  font-size: 60px;
   font-weight: 800;
   line-height: 50px;
   color: #fff;
@@ -629,7 +629,7 @@ p{
   text-transform: capitalize;
 }
 
-.hero-area .hero-content h1 span {
+.hero-area .hero-content h2 span {
   display: block;
 }
 
@@ -814,7 +814,7 @@ p{
     black-section Area CSS
 ========================================*/
 .black-section {
-  background-color: gray;
+  background-color: black;
   background-image: url(../images/dogedance.gif);
   background-repeat: no-repeat;
   color: white;
@@ -940,4 +940,77 @@ p{
   100% {
     transform: translateX(calc(100vw + 50px)) rotate(360deg);
   }
+}
+
+/*======================================
+    Dogefeatures
+========================================*/
+.dogefeatures {
+  background-image: url(../images/dogeminer2.png);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 130px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .dogefeatures {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .dogefeatures {
+    padding: 60px 0;
+  }
+}
+
+.dogefeatures .title h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.dogefeatures .title p {
+  color: #fff;
+}
+
+.dogefeatures .singlefeature {
+  margin-top: 50px;
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.dogefeatures .singlefeature h3 {
+  font-size: 35px;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.dogefeatures .singlefeature p {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .dogefeatures .title h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .dogefeatures .singlefeature {
+    margin-top: 30px;
+  }
+  .dogefeatures .singlefeature h3 {
+    font-size: 28px;
+  }
+}
+
+.dogefeatures span {
+  transition: color 0.5s;
+  font-family: 'Comic Sans MS', cursive;
 }
