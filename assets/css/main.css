@@ -394,7 +394,6 @@ a{
 }
 
 .header.sticky .button .btn {
-  background-color: black;
   color: #fff;
   border-color: transparent;
 }
@@ -759,8 +758,8 @@ a{
 }
 
 .hero-area .hero-content .button .btn {
-  background-color: #fff;
-  color: black;
+  background-color: #e1b303;
+  color: white;
   margin-right: 12px;
 }
 
@@ -1013,8 +1012,8 @@ a{
 }
 
 .areawbutton .awb-content .button .btn {
-  background-color: #fff;
-  color: black;
+  background-color: #e1b303;
+  color: white;
 }
 
 .areawbutton .awb-content .button .btn:hover {
@@ -1227,7 +1226,7 @@ a{
 
 
 .header .button .btn {
-  background-color: transparent;
+  background-color: #e1b303;
   border: 2px solid #fff;
   color: #fff;
   padding: 12px 30px;
